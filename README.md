@@ -1,56 +1,58 @@
-# HALCYOSAUR
+# 🦖 HALCYOSAUR
 
-### 🦕 HALCYOSAUR — Endless Pastel 3D Runner (iOS Glass Edition)
-
-**HALCYOSAUR** is a lightweight, zero-dependency browser game built entirely in a single HTML file using HTML5 Canvas, CSS3 glassmorphism, and a procedural Web Audio API synthesizer. Designed by **Sou.** (`"MADE BY SOU."`), it blends an iOS-inspired frosted glass interface with a customizable, atmospheric endless runner experience.
+**HALCYOSAUR** is an ultra-smooth, modern browser arcade game built from scratch with pure HTML5 Canvas, CSS3 Liquid Glass UI design, and a zero-dependency Web Audio synthesizer. Embark on an endless halcyon journey across dynamic pastel biomes with real-time day/night orbits and fully customizable Saurians.
 
 ---
 
-### ✨ Key Features
+## ✨ Key Features
 
-* **iOS Glassmorphic UI**: Frosted glass HUD cards, menus, and touch controls powered by CSS `backdrop-filter`.
-
-
-* **4 Pastel Biome Terrains**: Choose between **Pratum** (Grass), **Nix** (Snow), **Cerasus** (Sakura), and **Arena** (Dunes), each with custom sky gradients, parallax mountains, and ambient weather particles.
-
-
-* **Dynamic Day & Night Orbit**: Real-time orbiting sun and moon that smoothly transition the sky, lighting, and ground palettes between day and night.
-
-
-* **Time & Speed Manipulation**: Accelerate or decelerate your dinosaur on the fly, and speed up or slow down the sun cycle at will.
-
-
-* **Procedural Web Audio Synthesizer**: Built-in `PastelAudioEngine` generates real-time ambient background melodies and sound effects for jumping, ducking, dodging, and day cycle completions without external audio files.
-
-
-* **Cross-Device Control Modes**: Seamless support for both Desktop (Keyboard Mode) and Mobile/Tablet (Virtual Glass Joystick & Touch Mode).
-
-
-
+* **Liquid Glass UI Architecture**: Features simultaneous 4-corner radial color spreading, smooth theme transitions, and independent panel-hiding controls.
+* **Zero-Lag Web Audio Synthesizer**: Generates dynamic ambient background arpeggios, jump sounds, dodge alerts, and day cycle rewards on the fly using native Web Audio API oscillators.
+* **2.5D / 3D Spatial Rendering Pipeline**: Dynamic parallax hills, orbiting sun & moon cycles, and camera mode switches (`Standard`, `Cinematic/Wide`, `Low Action`, `Aerial`).
+* **Translucent Jump Projectile & Landing Target**: Interactive trajectory arc preview and glowing ground pads that accurately map your saurian's touchdown.
+* **Customizable Saurians & Biomes**: 
+  * *Species*: T-Rex, Velociraptor, Triceratops, Stegosaurus.
+  * *Spatial Chroma*: Iris, Titanium, Bio-Mint, Plasma, Holo Rose, Void (Dark Matter).
+  * *Pastel Terrain*: Pratum (Grass), Nix (Snow), Cerasus (Sakura), Arena (Dunes).
+* **Cross-Platform Controls**: Responsive smartphone/tablet virtual glass joystick & action pad, alongside comprehensive desktop keyboard shortcuts.
 
 ---
 
-### 🏆 Scoring System
+## 🎮 Controls & Shortcuts
 
-* **Distance**: `+1 pt` per unit of distance traveled.
+### **Laptop / PC (Keys Mode)**
+| Key | Action |
+| :--- | :--- |
+| **SPACE / UP ARROW** | Jump (Calculates exact parabolic trajectory arc) |
+| **DOWN ARROW** | Duck / Fast Fall |
+| **A / D** | Accelerate / Decelerate Running Speed ($4.0\text{x}$ to $16.0\text{x}$) |
+| **W / S** | Adjust Sun / Moon Orbital Speed |
+| **C** | Cycle Camera Modes (`Standard` → `Wide` → `Low` → `Aerial`) |
+| **B** | Cycle Pastel Biome Terrains |
+| **V** | Cycle Spatial Chroma Dino Finishes |
+| **N** | Cycle Sky Atmosphere (`Dynamic` → `Day` → `Sunset` → `Night`) |
+| **T** | Toggle Light / Dark Glass UI Theme |
+| **J** | Toggle Translucent Jump Projectile Preview Arc |
+| **U** | Unhide All Hidden UI Panels |
+| **P / ESC** | Open Pause Menu & Live Customization Deck |
+| **M** | Toggle Audio Mute |
 
-
-* **Obstacle & Bird Dodges**: `+5 pts` for every ground obstacle skipped or low-flying bird dodged, complete with shockwave and particle bursts.
-
-
-* **Solar Cycles**: `+10 pts` bonus for every full Day/Night cycle completed.
-
-
-* **Session Best**: Automatically tracks and updates your highest score during the active browser session via `sessionStorage`.
-
-
+### **Smartphone / Tablet (Touch Mode)**
+* **Virtual Glass Joystick**: Slide left/right to adjust runner speed; slide up/down to adjust day/night orbit speed.
+* **JUMP / DUCK Buttons**: Dedicated touchpads for smooth mobile action handling.
 
 ---
 
-### 🚀 How to Play Locally or Host
+## 🏆 Scoring System
 
-1. Clone the repository or download the `index.html` file.
-2. Open the HTML file directly in any modern web browser—no build steps, external assets, or servers required.
+* **Distance**: $+1$ point per unit distance (`+1u`).
+* **Dodges**: $+5$ points per obstacle or aerial bird successfully skipped.
+* **Day Cycle**: $+10$ points per completed 24-hour orbit.
 
+---
 
-3. To host on **GitHub Pages**, push the file as `index.html` to your main branch and enable GitHub Pages in your repository's **Settings > Pages**.
+## 📜 License & Copyright
+
+Copyright © 2026 Sou. All rights reserved. 
+
+This software and its source code are released under a strict **EULA (End-User License Agreement)**. Unauthorized modification, redistribution, or commercial use without explicit prior permission from the author is prohibited.
