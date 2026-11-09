@@ -902,6 +902,7 @@ function renderScene() {
 
   ctx.restore();
 }
+
 function draw3DDino() {
   const d = game.dino;
   const chroma = DINO_CHROMAS[game.dinoChromaKey];
@@ -1787,7 +1788,7 @@ function handleJoystickMove(e) {
 
   const cycleFactor = -dy / maxDist;
   game.dayCycleSpeed = +(1.5 + cycleFactor * 2.5).toFixed(1);
-  game.dayCycleSpeed = Math.max(game.minCycleSpeed, Math.max(game.minCycleSpeed, game.dayCycleSpeed));
+  game.dayCycleSpeed = Math.max(game.minCycleSpeed, Math.min(game.maxCycleSpeed, game.dayCycleSpeed));
 
   updateHUD();
 }
@@ -1795,3 +1796,4 @@ function handleJoystickMove(e) {
 resetObstacles();
 updateHUD();
 requestAnimationFrame(animate);
+
